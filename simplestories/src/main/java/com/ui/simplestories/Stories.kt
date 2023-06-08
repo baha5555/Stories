@@ -53,10 +53,16 @@ fun Stories(
                     pauseTimer = it
             },
             onSwipeLeft = {
+
+
+
+
                 if (pagerState.currentPage > 0) {
                     coroutineScope.launch {
                         pagerState.scrollToPage(pagerState.currentPage - 1, 0f)
                     }
+
+
                 }
             },
             onSwipeRight = {
